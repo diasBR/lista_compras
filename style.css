@@ -1,0 +1,90 @@
+@media screen and (max-width: 600px) {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+}
+
+.image img {
+    width: 100%;
+}
+
+.container {
+    padding: 30px;
+    margin-top: -10px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+form {
+    text-align: center;
+}
+
+input, button {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border: 2px solid rgb(30, 207, 30); /* Uma borda azul quando o input está em foco */
+    outline: none; /* Remove o destaque padrão do navegador (pode ser opcional) */
+}
+
+button {
+    background-color: gray;
+    width: 30%;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+#resetButton {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uList {
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+li {
+    padding: 10px;
+}
+
+.selected {
+    /* text-decoration: line-through; Adiciona uma linha sobre o texto */
+    background-color: rgba(255, 0, 0, .7);
+    border-radius: 10px;
+    padding: 0 .3em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    background-color: rgba(0, 128, 0, .7);
+    border-radius: 10px;
+    padding: 0 .3em;
+}
+
+}
