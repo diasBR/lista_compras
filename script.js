@@ -45,6 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     taskList.addEventListener('click', function (e) {
         if (e.target.tagName === 'A') {
+
+            e.preventDefault(); // Evita o comportamento padrão do link
+
             e.target.classList.toggle('selected');
             const taskIndex = Array.from(taskList.children).indexOf(e.target.parentElement);
             savedTasks[taskIndex].completed = !savedTasks[taskIndex].completed;
